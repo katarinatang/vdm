@@ -1,0 +1,271 @@
+/**
+ * Clearfix
+ */
+/**
+ * Media
+ * 
+ * @param  {Integer} $screen 
+ */
+/**
+ * Grid Config
+ */
+/**
+ * Container
+ */
+.container {
+  margin: 0 auto;
+  max-width: 980px;
+}
+
+.container--full {
+  max-width: 100%;
+  width: 100%;
+}
+
+.container--full-padded {
+  max-width: none;
+  width: 100%;
+  padding: 0 30px;
+}
+
+.container--huge {
+  max-width: 1280px;
+}
+
+.container--large {
+  max-width: 1140px;
+}
+
+.container--med {
+  max-width: 800px;
+}
+
+.container--small {
+  max-width: 680px;
+}
+
+/**
+ * Row
+ */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.row--gutters {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.row--gutters:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row--gutters *[class^="col-"] {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.row--content {
+  margin-bottom: 20px;
+}
+
+.row--padded {
+  padding: 0 50px;
+}
+
+.centered {
+  margin: 0 auto;
+  float: none !important;
+}
+
+/**
+ * Columns
+ */
+.col-1 {
+  width: 8.33333%;
+  float: left;
+}
+
+.col-2 {
+  width: 16.66667%;
+  float: left;
+}
+
+.col-3 {
+  width: 25%;
+  float: left;
+}
+
+.col-4 {
+  width: 33.33333%;
+  float: left;
+}
+
+.col-5 {
+  width: 41.66667%;
+  float: left;
+}
+
+.col-6 {
+  width: 50%;
+  float: left;
+}
+
+.col-7 {
+  width: 58.33333%;
+  float: left;
+}
+
+.col-8 {
+  width: 66.66667%;
+  float: left;
+}
+
+.col-9 {
+  width: 75%;
+  float: left;
+}
+
+.col-10 {
+  width: 83.33333%;
+  float: left;
+}
+
+.col-11 {
+  width: 91.66667%;
+  float: left;
+}
+
+.col-12 {
+  width: 100%;
+  float: left;
+}
+
+.col-1-5 {
+  float: left;
+  width: 20%;
+}
+
+.col--half:first-child {
+  padding-right: 40px;
+}
+.col--half:last-child {
+  padding-left: 40px;
+}
+
+/**
+ * Media Queries
+ */
+@media screen and (max-device-width: 768px) {
+  .col-1 {
+    width: 100%;
+    float: left;
+  }
+
+  .col-2 {
+    width: 100%;
+    float: left;
+  }
+
+  .col-3 {
+    width: 100%;
+    float: left;
+  }
+
+  .col-4 {
+    width: 100%;
+    float: left;
+  }
+
+  .col-5 {
+    width: 100%;
+    float: left;
+  }
+
+  .col-6 {
+    width: 100%;
+    float: left;
+  }
+
+  .col-7 {
+    width: 100%;
+    float: left;
+  }
+
+  .col-8 {
+    width: 100%;
+    float: left;
+  }
+
+  .col-9 {
+    width: 100%;
+    float: left;
+  }
+
+  .col-10 {
+    width: 100%;
+    float: left;
+  }
+
+  .col-11 {
+    width: 100%;
+    float: left;
+  }
+
+  .col-12 {
+    width: 100%;
+    float: left;
+  }
+}
+/**
+ * Flexbox
+ */
+.row--flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.grid > div {
+  border: 1px solid black;
+  background-color: yellow;
+  height: 50px;
+}
+
+p {
+  color: grey;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  height: 50px;
+  padding: 15px 20px;
+  border-radius: 4px;
+  background-color: #c1c1c1;
+  color: white;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  font-size: 1em;
+  /**
+   * Primary
+   * @var $color-primary
+   * @required _config.scss
+   */
+}
+.btn.btn--primary {
+  background-color: #237cbf;
+}
+.btn.btn--primary:hover {
+  background-color: #1d68a1;
+}

@@ -1,0 +1,114 @@
+/**
+ * Grid Config
+ */
+$grid-columns : 12;
+
+
+
+
+
+/**
+ * Container
+ */
+.container {
+  margin: 0 auto;
+  max-width: 980px;
+  
+  // @TODO Refactor (Make .container default same as container--huge)
+  // max-width: 1280px;
+}
+
+  .container--full  { max-width: 100%; width: 100%; }
+  .container--full-padded  { max-width: none; width: 100%; padding:0 30px; }
+  .container--huge { max-width: 1280px; }
+  .container--large { max-width: 1140px; }
+  .container--med   { max-width: 800px; }
+  .container--small { max-width: 680px; }
+
+/**
+ * Row
+ */
+.row {
+  @include clearfix;
+}
+.row--gutters {
+  margin-left: -15px;
+  margin-right: -15px;
+  @include clearfix;
+
+
+  *[class^="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.row--content {
+  margin-bottom: 20px;
+}
+.row--padded {
+  padding: 0 50px;
+}
+
+.centered {
+  margin: 0 auto;
+  float:none !important;
+}
+
+/**
+ * Columns
+ */
+@for $i from 1 through $grid-columns {
+  
+  $col_width : ( $grid-columns / $i );
+
+  .col-#{$i} { 
+    width: ( 100 /  $col_width ) * 1%; 
+    float: left;
+  }
+  
+} 
+  
+  // Extra Column Classes
+  .col-1-5 {
+    float:left;
+    width: 20%;
+  }
+  
+  .col--half {
+    &:first-child { padding-right: 40px; }
+    &:last-child { padding-left: 40px; }
+  }
+
+
+/**
+ * Media Queries
+ */
+@media screen and (max-device-width: 768px) {
+  
+  @for $i from 1 through $grid-columns {
+    
+    $col_width : ( $grid-columns / $i );
+
+    .col-#{$i} { 
+      width: 100%; 
+      float: left;
+    }
+    
+  } 
+}
+
+
+
+
+
+
+/**
+ * Flexbox
+ */
+.row--flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+  .col--flex {
+
+  } 

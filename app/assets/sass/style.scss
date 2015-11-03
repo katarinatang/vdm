@@ -1,0 +1,58 @@
+@import 'config';
+@import 'modules/mixins';
+@import 'lib/grid'; 
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+  @include baseline;
+}
+
+.grid {
+  > div {
+    border: 1px solid black;
+    background-color: yellow;
+    height: 50px;
+  }
+}
+
+p {
+  color: grey;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  height: 50px;
+  padding: 15px 20px;
+  border-radius: 4px;
+  
+  background-color: #c1c1c1;
+  color: white;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  
+  font-size: 1em;
+  
+  &:hover {
+
+  }
+
+  // Primary _config.scss
+  /**
+   * Primary
+   * @var $color-primary
+   * @required _config.scss
+   */
+  &.btn--primary {
+    background-color: $color-primary;
+
+    &:hover {
+      background-color: darken($color-primary, 7);
+
+    }
+  }
+}
+
