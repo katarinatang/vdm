@@ -228,23 +228,24 @@
 }
 
 body {
+  margin: 0px;
+}
+
+.tagline {
+  text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
 
-h2 {
-  margin: 0;
-  padding: 0;
-  line-height: 1;
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .grid > div {
   border: 1px solid black;
   background-color: yellow;
   height: 50px;
-}
-
-p {
-  color: grey;
 }
 
 .btn {
@@ -268,4 +269,22 @@ p {
 }
 .btn.btn--primary:hover {
   background-color: #1d68a1;
+}
+
+#hero {
+  background: url("/assets/img/bannerimage_boy.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 100%;
+  padding: 160px 0 0 0;
+  display: block;
+  margin: auto;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+}
+ul li {
+  display: inline;
 }
