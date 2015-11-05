@@ -10,7 +10,31 @@ body {
 
 .tagline {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 300;
+}
+
+.sub-tagline {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bolder;
+  font-size: .8em;
+  text-decoration: none;
+  display: block;
+  margin: 0 auto;
+  padding: 0 0 50px;
+  color: #EBE694;
+}
+
+.fa-angle-down {
+  margin: 0 auto;
+  padding: 0 0 100px;
+  text-align: center;
+  float: none !important;
+}
+
+.fa-circle-o {
+  padding-right: 12px;
 }
 
 .logo {
@@ -19,25 +43,11 @@ body {
   margin-right: auto;
 }
 
-.grid {
-  > div {
-    border: 1px solid black;
-    background-color: yellow;
-    height: 50px;
-  }
-}
-
-
 .btn {
   display: inline-block;
   text-decoration: none;
-  height: 50px;
-  padding: 15px 20px;
-  border-radius: 4px;
   
-  background-color: #c1c1c1;
-  color: white;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px px 1px rgba(0, 0, 0, 0.2);
   
   font-size: 1em;
   
@@ -52,31 +62,80 @@ body {
    * @required _config.scss
    */
   &.btn--primary {
-    background-color: $color-primary;
+    background-color: $color-blue;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 4px;
 
     &:hover {
-      background-color: darken($color-primary, 7);
+      background-color: darken($color-blue, 7);
 
     }
   }
 }
 
 #hero {
-  background: url('/assets/img/bannerimage_boy.jpg') no-repeat center center;
+  background: 
+  linear-gradient(to bottom right,
+  rgba(23, 134, 535, .85),
+  rgba(74, 511, 519, .85)
+  ), 
+  url('/assets/img/bannerimage_boy.jpg') no-repeat center center;
   background-size: cover;
   min-height: 100%;
   padding: 160px 0 0 0;
   display: block; 
-  margin: auto;
-
+  text-align: center;
   color: white;
 }
 
-ul {
-  list-style-type: none;
-  li {
-    display: inline;
-  }
-  font-family: 'Open Sans', sans-serif;
+#hero2 {
+  background: 
+  linear-gradient(to bottom right,
+  rgba(23, 134, 535, .6),
+  rgba(74, 511, 519, .6)
+  ), 
+  url('/assets/img/family.jpg') no-repeat center center;
+  background-size: cover;
+  min-height: 100%;
+  padding: 160px 0 0 0;
+  display: block; 
+  text-align: center;
+  color: white;
 }
 
+
+
+
+
+.nav {
+
+  ul {
+  list-style-type: none;
+  text-decoration: none;
+  text-align: right;
+  padding-top: 30px;
+    li {
+      display: inline;
+      padding: 0 10px;
+      font-size: .85rem;
+      font-weight: bolder;
+      color: $color-blue;
+    }
+    a {
+      font-color: white;
+      text-decoration: none;
+      color: $color-blue;
+    }
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    .fa-angle-down {
+      padding-left: 2px;
+      color: $color-lightgray;
+    }
+  }
+}
+
+.nav-logo {
+  padding: 30px 0 20px 20px;
+}
