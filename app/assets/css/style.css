@@ -229,17 +229,22 @@
 
 body {
   margin: 0px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 100;
 }
 
 .tagline {
   text-align: center;
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 300;
+  font-weight: 100;
+}
+
+.tagline2 {
+  text-align: center;
+  font-weight: 100;
 }
 
 .sub-tagline {
   text-align: center;
-  font-family: 'Quicksand', sans-serif;
   font-weight: bolder;
   font-size: .8em;
   text-decoration: none;
@@ -269,7 +274,7 @@ body {
 .btn {
   display: inline-block;
   text-decoration: none;
-  box-shadow: 2px 2px px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.07);
   font-size: 1em;
   /**
    * Primary
@@ -301,24 +306,27 @@ body {
   background: linear-gradient(to bottom right, rgba(23, 134, 255, 0.6), rgba(74, 255, 255, 0.6)), url("/assets/img/family.jpg") no-repeat center center;
   background-size: cover;
   min-height: 100%;
-  padding: 160px 0 0 0;
+  padding: 200px 0;
   display: block;
   text-align: center;
   color: white;
 }
 
+.nav {
+  height: 90px;
+  padding-right: 30px;
+}
 .nav ul {
   list-style-type: none;
   text-decoration: none;
   text-align: right;
-  padding-top: 30px;
-  font-family: 'Lato', sans-serif;
+  padding-top: 22px;
   font-weight: 700;
 }
 .nav ul li {
   display: inline;
-  padding: 0 10px;
-  font-size: .85rem;
+  padding: 0 15px;
+  font-size: .75rem;
   font-weight: bolder;
   color: #1786eb;
 }
@@ -327,11 +335,31 @@ body {
   text-decoration: none;
   color: #1786eb;
 }
+.nav ul a:hover {
+  color: #1274cd;
+}
 .nav ul .fa-angle-down {
-  padding-left: 2px;
+  padding-left: 5px;
   color: #e5ecf1;
+  font-weight: bolder;
 }
 
 .nav-logo {
-  padding: 30px 0 20px 20px;
+  padding: 20px;
+  width: 90%;
+  height: 90%;
+}
+
+.learn-more {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e5ecf1;
+}
+
+.news {
+  font-weight: 100;
+  text-align: center;
+}
+.news h3 {
+  font-weight: 100;
 }
