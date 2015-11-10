@@ -290,6 +290,7 @@ body {
 }
 .btn.btn--primary:hover {
   background-color: #1274cd;
+  color: white;
 }
 
 #hero {
@@ -359,7 +360,104 @@ body {
 .news {
   font-weight: 100;
   text-align: center;
+  padding: 70px 0 50px;
+}
+.news h1 {
+  font-weight: 300;
 }
 .news h3 {
   font-weight: 100;
+}
+
+.classroom-news {
+  padding: 0;
+}
+.classroom-news h2 {
+  font-weight: 300;
+}
+.classroom-news i.fa-angle-down {
+  color: #908f94;
+  font-weight: bold;
+  padding: 0 0 20px 0;
+}
+.classroom-news a.view {
+  font-size: .75rem;
+  font-weight: bolder;
+  color: #1786eb;
+  padding: 20px 0 0 0;
+  text-decoration: none;
+}
+.classroom-news a.view:hover {
+  color: #0e5ea7;
+}
+.classroom-news div.news-excerpt {
+  padding: 40px 40px;
+}
+.classroom-news div.news-excerpt p {
+  line-height: 180%;
+  font-weight: 300;
+}
+.classroom-news div.news-excerpt i.fa-folder-o {
+  font-size: 1em;
+  color: #1786eb;
+}
+.classroom-news div.news-excerpt i.fa-circle-o {
+  font-size: 1em;
+  color: #1786eb;
+}
+.classroom-news div.news-excerpt a.folder {
+  text-decoration: none;
+  font-size: .9em;
+  font-weight: 300;
+  color: #8cc3f5;
+}
+.classroom-news div.news-excerpt a.folder:hover {
+  color: #1786eb;
+}
+
+.event {
+  padding: 20px;
+  line-height: 180%;
+}
+.event a {
+  color: #1786eb;
+  text-decoration: none;
+}
+.event h2 {
+  font-weight: 300;
+}
+.event p {
+  font-weight: 300;
+}
+
+.blue-date-box {
+  background-color: #e5ecf1;
+  background: linear-gradient(to bottom right, rgba(23, 134, 255, 0.4), rgba(74, 255, 255, 0.4));
+  background-color: #1786eb;
+  color: white;
+  text-align: center;
+}
+.blue-date-box h2.month {
+  font-weight: 100;
+  font-size: 1.5em;
+  margin: 50px 0 0 0;
+}
+.blue-date-box h2.date {
+  font-weight: 100;
+  font-size: 3.25em;
+  margin: 0;
+}
+.blue-date-box h2.time {
+  font-weight: 100;
+  font-size: 1.1em;
+  margin: 0 0 50px 0;
+}
+.blue-date-box i {
+  color: #e5ecf1;
+  opacity: .2;
+  padding: 0 0 20px 0;
+}
+
+.calendar {
+  padding: 0;
 }

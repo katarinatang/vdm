@@ -76,7 +76,7 @@ body {
 
     &:hover {
       background-color: darken($color-blue, 7);
-
+      color: white;
     }
   }
 }
@@ -163,8 +163,113 @@ body {
 .news {
   font-weight: 100;
   text-align: center;
-
+  padding: 70px 0 50px;
+  h1 {
+    font-weight: 300;
+  }
   h3 {
     font-weight: 100;
   }
+}
+
+.classroom-news {
+  padding: 0;
+  
+  h2 {
+    font-weight: 300;
+  }
+  i.fa-angle-down {
+      color: lighten($color-gray, 20);
+      font-weight: bold;
+      padding: 0 0 20px 0;
+  }
+  a.view {
+      font-size: .75rem;
+      font-weight: bolder;
+      color: $color-blue;
+      &:hover {
+        color: darken($color-blue, 15);
+      }
+      padding: 20px 0 0 0;
+      text-decoration: none;
+    }
+  div.news-excerpt {
+    padding: 40px 40px;
+    p {
+      line-height: 180%;
+      font-weight: 300;
+    }
+    i.fa-folder-o {
+      font-size: 1em;
+      color: $color-blue;
+    }
+    
+    i.fa-circle-o {
+      font-size: 1em;
+      color: $color-blue;
+    }
+    a.folder {
+      text-decoration: none;
+      font-size: .9em;
+      font-weight: 300;
+      color: lighten($color-blue, 25);
+      &:hover {
+        color: $color-blue;
+      }
+    }
+    
+  }
+}
+
+.event {
+  padding: 20px;
+  line-height: 180%;
+  a {
+    color: $color-blue;
+    text-decoration: none;
+  }
+  h2 {
+    font-weight: 300;
+  }
+  p {
+    font-weight: 300;
+  }
+}
+
+.blue-date-box {
+  background-color: $color-lightgray;
+  background: 
+  linear-gradient(to bottom right,
+  rgba(23, 134, 535, .4),
+  rgba(74, 511, 519, .4)
+  );
+  background-color: #1786eb;
+  color: white;
+  
+  h2.month {
+    font-weight: 100;
+    font-size: 1.5em;
+    margin: 50px 0 0 0;
+  }
+  h2.date {
+    font-weight: 100;
+    font-size: 3.25em;
+    margin: 0;
+
+  }
+  h2.time {
+    font-weight: 100;
+    font-size: 1.1em;
+    margin: 0 0 50px 0;
+  }
+  i {
+    color: $color-lightgray;
+    opacity: .2;
+    padding: 0 0 20px 0;
+  }
+  text-align: center;
+}
+
+.calendar {
+  padding: 0;
 }
