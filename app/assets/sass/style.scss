@@ -52,15 +52,8 @@ body {
 
 .btn {
   display: inline-block;
-  text-decoration: none;
-  
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.07);
-  
+  text-decoration: none;  
   font-size: 1em;
-  
-  &:hover {
-
-  }
 
   // Primary _config.scss
   /**
@@ -73,10 +66,121 @@ body {
     color: white;
     padding: 12px 25px;
     border-radius: 4px;
+  &.btn--submit {
+    background-color: $color-blue;
+    color: white;
+    height: 30px;
+    width: 30px;
+    padding: 12px 12px;
+    border-radius: 5px;
+    }
+  &:hover {
+    background-color: darken($color-blue, 7);
+    color: white;
+  }
 
-    &:hover {
-      background-color: darken($color-blue, 7);
+  }
+}
+
+#footer {
+  height: 300px;
+  
+  ul {
+    list-style: none;
+  }
+
+  .social {
+    padding-top: 2%;
+    background-color: lighten($color-lightgray, 5);
+    height: 300px;
+    width: 10%;
+
+    .btn {
+      background-color: $color-blue;
       color: white;
+      width:50px;
+      height:50px;
+      border-radius:50px;
+      font-size:18px;
+      line-height:50px;
+      margin-top: 15px;
+      text-align: center;
+    }
+  }
+  
+  .footer-menu {
+    background-color: lighten($color-lightgray, 5);
+    height: 300px;
+    width: 30%;
+    padding: 100px 50px;
+    color: $color-blue;
+    font-weight: 700;
+    font-size: .8rem;
+    
+    ul {
+      padding-left: 0;
+    }
+    li {
+    padding-bottom: 15px;
+    &:hover {
+      color: darken($color-blue, 7);
+    }
+  }
+}
+  .email {
+    padding: 40px 0 0 50px;
+    background-color: $color-lightgray;
+    height: 300px;
+    width: 60%;
+    font-size: 1em;
+      font-weight: 100;
+
+    h2 {
+      color: $color-blue;
+      font-weight: 300;
+      font-size: 1.75em;
+    }
+    h3 {
+      color: $color-gray;
+      font-weight: 100;
+      padding-bottom: 30px;
+    }
+    .enter-email {
+      border-radius: 30px;
+      border: solid 1px lighten($color-blue, 30);
+      border-width: 1px;
+      padding: 15px 20px;
+      width: 300px;
+      height: 45px;
+    }
+    input {
+      font-family: 'Lato', sans-serif;
+      font-size: 1em;
+      font-weight: 100;
+    }
+    .placeholder {
+      font-size: 1em;
+      font-weight: 100;
+    }
+    .btn {
+      width:45px;
+      height:45px;
+      border-radius: 50px;
+      color: white;
+      background-color: $color-blue;
+      &:hover {
+      color: darken($color-blue, 7);
+      }
+      text-align: center;
+      vertical-align: middle;
+      line-height: 45px;
+      position: absolute;
+      left: 640px;
+      // border-radius:40px;
+      // font-size:18px;
+      // line-height:30px;
+      // padding-left: 20px;
+      // margin-top: 15px;
     }
   }
 }
@@ -89,7 +193,7 @@ body {
   ), 
   url('/assets/img/bannerimage_boy.jpg') no-repeat center center;
   background-size: cover;
-  min-height: 100%;
+  min-height: 110%;
   padding: 160px 0 0 0;
   display: block; 
   text-align: center;
@@ -104,11 +208,14 @@ body {
   ), 
   url('/assets/img/family.jpg') no-repeat center center;
   background-size: cover;
-  min-height: 100%;
+  min-height: 50%;
   padding: 200px 0;
   display: block; 
   text-align: center;
   color: white;
+  i {
+    padding-right: 8px;
+  }
 }
 
 
@@ -116,7 +223,7 @@ body {
 
 
 .nav {
-  height: 90px;
+  height: 100px;
   padding-right: 30px;
   ul {
   list-style-type: none;
@@ -128,9 +235,8 @@ body {
     li {
       display: inline;
       padding: 0 15px;
-      font-size: .75rem;
+      font-size: .8rem;
       font-weight: bolder;
-      color: $color-blue;
     }
     a {
       font-color: white;
@@ -164,6 +270,7 @@ body {
   font-weight: 100;
   text-align: center;
   padding: 70px 0 50px;
+
   h1 {
     font-weight: 300;
   }
@@ -194,7 +301,7 @@ body {
       text-decoration: none;
     }
   div.news-excerpt {
-    padding: 40px 40px;
+    padding: 40px 100px 0 20px;
     p {
       line-height: 180%;
       font-weight: 300;
@@ -222,7 +329,7 @@ body {
 }
 
 .event {
-  padding: 20px;
+  padding:  15px 30px;
   line-height: 180%;
   a {
     color: $color-blue;
@@ -243,8 +350,9 @@ body {
   rgba(23, 134, 535, .4),
   rgba(74, 511, 519, .4)
   );
-  background-color: #1786eb;
+  background-color: $color-blue;
   color: white;
+  width: 20%;
   
   h2.month {
     font-weight: 100;
@@ -270,6 +378,64 @@ body {
   text-align: center;
 }
 
-.calendar {
-  padding: 0;
+#history {
+  background: 
+    // -webkit-filter: sepia(100%),
+    url('/assets/img/boysoncampus.jpg') no-repeat center center;
+    background-size: cover;
+    height: 600px;
+    padding: 20% 25%;
+    color: white;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    h2 {
+    font-weight: 100;
+    font-size: 2em;
+    }
+}
+
+#boy-sml {
+  background:
+  linear-gradient(to bottom right,
+  rgba(23, 134, 535, .6),
+  rgba(74, 511, 519, .6)
+  ), 
+  url('/assets/img/boy-sml.png');
+  color: white;
+  text-align: center;
+  height: 500px;
+}
+
+#manandgirl {
+  background:
+  linear-gradient(to bottom right,
+  rgba(23, 134, 535, .6),
+  rgba(74, 511, 519, .6)
+  ), 
+  url('/assets/img/manandgirl.jpg');
+  color: white;
+  text-align: center;
+  height: 500px;
+}
+
+#paintingmural {
+  background:
+  linear-gradient(to bottom right,
+  rgba(23, 134, 535, .6),
+  rgba(74, 511, 519, .6)
+  ), 
+  url('/assets/img/paintingmural.jpg');
+  color: white;
+  text-align: center;
+  height: 500px;
+}
+
+.opportunity {
+  padding: 200px 0;
+  text-align: center;
+
+  h2 {
+    font-weight: 100;  
+    font-size: 2em;
+  }
 }
