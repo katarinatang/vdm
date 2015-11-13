@@ -83,7 +83,7 @@ $grid-columns : 12;
 /**
  * Media Queries
  */
-@media screen and (max-device-width: 768px) {
+@media screen and (max-width: 768px) {
   
   @for $i from 1 through $grid-columns {
     
